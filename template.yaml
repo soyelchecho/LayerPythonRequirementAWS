@@ -1,0 +1,16 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: >
+  AWSLayerPython
+
+Resources:
+  LambdaLayerAWSPython:
+    Type: AWS::Serverless::LayerVersion #Definition of creation Layer In AWS
+    Properties:
+      LayerName: python-layer #Name of the layer in aws (it doesn't include the code aws)
+      Description: Layer that have all the requirements of my project
+      ContentUri: ./ # Where the Layer get the root
+      CompatibleRuntimes:
+        - python3.8 # your version of python hear
+      LicenseInfo: Avaible under the MIT-0 license.
+      RetentionPolicy: Retain
