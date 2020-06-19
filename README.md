@@ -48,5 +48,4 @@ To deploy the output package that we do in 2.1 in AWS we need to exec the follow
 ```
 sam deploy --template-file packaged-template.yaml --stack-name LayerPythonBase --capabilities CAPABILITY_IAM
 ```
-<<<<<<< HEAD
 where package-template.yaml is the output file that we put into the command in 2.1, stack-name is the name assign to the package into aws and if we need to add capabilities put together of it.
