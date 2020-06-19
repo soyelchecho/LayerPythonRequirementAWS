@@ -1,0 +1,10 @@
+# <---------- ADD ALL THE DEPENDENCIES OF THE POJECT HERE ----> #
+cryptography
+marshmallow
+PyMySQL
+pytest
+python-dateutil
+python-jose
+Reportlab
+requests
+sqlalchemy
